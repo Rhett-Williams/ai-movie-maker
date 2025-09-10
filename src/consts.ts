@@ -1,0 +1,1 @@
+export const BASE_URL = `https://${process.env.GOOGLE_API_ENDPOINT}/v1/projects/${process.env.PROJECT_ID}/locations/${process.env.LOCATION_ID}/publishers/google/models/${process.env.MODEL_ID}`;
