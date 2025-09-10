@@ -16,7 +16,7 @@ export default async function requestVideo({
 }: RequestVideoProps) {
   // Build the request body
   const requestBody = {
-    endpoint: `projects/${process.env.PROJECT_ID}/locations/${process.env.LOCATION_ID}/publishers/google/models/${process.env.MODEL_ID}`,
+    endpoint: `projects/${process.env.PROJECT_ID}/locations/${process.env.LOCATION_ID}/publishers/google/models/${process.env.VIDEO_GENERATOR_MODEL_ID}`,
     instances: [
       {
         prompt,
