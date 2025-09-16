@@ -55,10 +55,6 @@ export default async function requestVideo({
     console.log("resolved: ", operationId);
     return { operationId, success: true };
   } catch (error: any) {
-    console.error(
-      "Error calling the API:",
-      error.response?.data || error.message
-    );
-    throw error;
+    throw error.response?.data || error.message;
   }
 }
